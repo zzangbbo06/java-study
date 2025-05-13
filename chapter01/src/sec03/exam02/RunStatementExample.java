@@ -14,9 +14,8 @@ Window > Preference > General > Keys 메뉴에서 확인 가능
 단축키 보기 Hint : Ctrl + Shift + L
 
 
-아래줄로 한줄 뛰기 + 한줄 띄기
+아래줄로 한 뛰기 + 한줄 띄기
 shift + Enter
-
 - 코드 작성 및 편집
 Ctrl + Space : 자동 완성 기능
 Ctrl + Shift + O : 필요한 import 자동 추가 및 정리
