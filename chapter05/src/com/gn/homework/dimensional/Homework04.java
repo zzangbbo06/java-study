@@ -12,6 +12,7 @@ public class Homework04 {
 		while (count < 6) {
 			int lottoNum = (int)((Math.random() * 45) + 1);
 			
+			// 중복 체크
 			boolean isDuplicate = false;
 			
 			for (int i = 0; i < count; i++) {

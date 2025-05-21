@@ -10,6 +10,7 @@ public class Homework05 {
         String[] choices = {"가위", "바위", "보"};
         Scanner sc = new Scanner(System.in);
         Random rand = new Random();
+        // 카운터 변수들
         int victory = 0;
         int equal = 0;
         int lose = 0;
