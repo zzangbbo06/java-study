@@ -10,7 +10,7 @@ public class Car {
 	public int getSpeed() { //만약 getter만 존재하면 읽기 전용 필드
 		return speed;
 	}
-	public void setSpeed(int speed) { // setting만 하는 것이기 때문에 void
+	public void setSpeed(int speed) { // setting만 하는 것이기 때문에 void(return 값이 없으면)
 		if(speed < 0) {
 			this.speed = 0;
 			return; // 리턴을 빼던가
