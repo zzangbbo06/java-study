@@ -6,7 +6,7 @@ public class InstancdOfExample {
 		// 테스트 먼저
 		Parent parent = new Parent(); // 부모 객체가 들어가 있기 때문에 자식객체로 바꿀수 없음
 //		Child child = parent; // 부모 타입을 자식타입으로 바꾸는것은 불가능(타입이 안맞음)
-//		Ch|ild child = (Child)parent; // 예외발생 = ClassCastException
+//		Child child = (Child)parent; // 예외발생 = ClassCastException
 		
 		// 강제 타입 변환을 하기 전에 검사(안전한 코딩)
 		// 검사할 객체(좌측) instanceOf 클래스타입(우측)
