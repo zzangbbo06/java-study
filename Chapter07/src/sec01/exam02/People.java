@@ -9,6 +9,6 @@ public class People {
 		this.ssn = ssn;
 		System.out.println("부모 객체 생성 완료");
 	}
-	
+
 	
 }
