@@ -12,8 +12,9 @@ public class CharacterController {
 		}
 		
 		int count = 0;
-		for(char ch : s.toCharArray()) {
+		for(char ch : s.toCharArray()) { //문자열 -> 문자 배열(char[])
 			if((ch >= 'A' && ch <= 'Z')|| (ch >= 'a' && ch <= 'z')) {
+				// 문자로 조건문도 사용가능, 문자는 정수값(유니코드)로 저장되기 때문
 				count++;
 			}
 		}
