@@ -11,7 +11,7 @@ public class BookMenu{ // 점선화살표, 화살이 채워져있어야함 has-a
 	BookController bc = new BookController();
 	
 	public void mainMenu() {
-		while(true) {
+		Exit: while(true) {
 			System.out.println("=== 가남 도서관에 오신걸 환영합니다 ===");
 			System.out.println("원하시는 업무의 번호를 선택하세요.");
 			System.out.println("1. 새 도서 추가");
@@ -21,8 +21,32 @@ public class BookMenu{ // 점선화살표, 화살이 채워져있어야함 has-a
 			System.out.println("5. 도서 오름차순 정렬");
 			System.out.println("9. 종료");
 			System.out.print("메뉴 선택: ");
-			sc.nextInt();
+			int menuNum = sc.nextInt();
 			sc.nextLine();
+			
+			switch(menuNum) {
+			case 1:
+				insertBook();
+				break;
+			case 2:
+				selectList();
+				break;
+			case 3:
+				searchBook();
+				break;
+			case 4:
+				deleteBook();
+				break;
+			case 5:
+				ascBook();
+				break;
+			case 9:
+				System.out.println("프로그램을 종료합니다.");
+				break Exit;
+			default:
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+				break;
+			}
 			
 		}
 
@@ -49,8 +73,9 @@ public class BookMenu{ // 점선화살표, 화살이 채워져있어야함 has-a
 		
 	}
 	public void selectList() {
-		bc.selectList();
-		List<Book> selectList = new ArrayList<Book>();
+		
+		
+		List<Book> selectList = new ArrayList<Book>(bc.selectList());
 		
 		System.out.println("=== 전체 조회 ===");
 		if(selectList.isEmpty()) {

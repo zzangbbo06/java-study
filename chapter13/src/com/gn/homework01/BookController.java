@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class BookController extends Book{
+public class BookController{
 
 	List<Book> bookList = new ArrayList<Book>();
 	
@@ -14,6 +14,11 @@ public class BookController extends Book{
 		Book book2 = new Book("코스모스","칼 세이건","자연과학",17910);
 		Book book3 = new Book("나에게 들려주는 예쁜 말","김종원","어린이",15610);
 		Book book4 = new Book("혼자 공부하는 자바","신용권","기타",25240);
+		
+		bookList.add(book1);
+		bookList.add(book2);
+		bookList.add(book3);
+		bookList.add(book4);
 	}
 	
 	public void insertBook(Book bk) {
@@ -39,20 +44,18 @@ public class BookController extends Book{
 	}
 	
 	
-	public Book deleteBook(String title, String author) {
+	public Book deleteBook(String title, String author) { // 이 부분 한번 공부해보기
 		
-		Book removeBook = new Book();
+		Book removeBook = null;
 		
-		boolean found = false;
+
 		
 		for(int i = 0; i < bookList.size(); i++) {
-			
-			if(bookList.contains(title) && bookList.contains(author)) {
-				found = true;
-				bookList.remove(i);
-				if(found) {
-					removeBook = bookList.remove(i);
-				}
+			Book book = bookList.get(i);
+			if(book.getTitle().equals(title) && book.getAuthor().equals(author)) {
+				// book 안에 있는 값들에 접근하기 위해서 Book 클래스를 선언해서 접근해줘야하고 private로 선언
+				// 되었기 때문에 getTitle로 읽어오기
+				removeBook = bookList.remove(i);
 				break;
 			}
 		} 
