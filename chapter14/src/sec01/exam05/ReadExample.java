@@ -6,7 +6,7 @@ import java.io.InputStream;
 public class ReadExample {
 
 	public static void main(String[] args) throws Exception{
-		InputStream is = new FileInputStream("C:/Windows/Temp/test.db");
+		InputStream is = new FileInputStream("C:/Windows/Temp/test.db");	
 		
 		// 길이가 100인 byte 타입의 빈 배열 생성
 		byte[] buffer = new byte[100];

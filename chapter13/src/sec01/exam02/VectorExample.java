@@ -25,3 +25,6 @@ public class VectorExample {
 		}
 	}
 }
+
+// 메소드들이 동기화(synchronized)되어 있어 한번에 하나의 쓰레드만 접근 가능, 속도가 느림
+// 동시에 여러 스레드가 접근하면 잠금(lock)이 걸리지만 안정적임

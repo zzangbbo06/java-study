@@ -22,7 +22,7 @@ public class HashSetExample {
 		set.add(new Member("김재현",19));
 		set.add(new Member("김재현",10));
 		
-		//  hashCode()와 equals()를 재정의 하지 ㅇ낳으면 삭제 안됨
+		//  hashCode()와 equals()를 재정의 하지 않으면 삭제 안됨
 		set.remove(new Member("김재현",30));
 		
 		// 이 외에도 동등 객체로 판단하는 많은 메소드들이 제대로 동작하려면 재정의 필수임
@@ -34,7 +34,7 @@ public class HashSetExample {
 		
 		// 요소 정렬
 		// Integer, String과 같은 경우 Collections.sort() 바로 사용 가능
-		// Memmber처럼 사용자 정의 객체끼리 비교할 경우 비교 불가능
+		// Member처럼 사용자 정의 객체끼리 비교할 경우 비교 불가능
 		// 정렬 기준으로 어떤 값을 사용할지 별도로 구현해야 함
 		// Member 클래스가 Comparable을 구현
 		

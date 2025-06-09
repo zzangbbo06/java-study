@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Set;
 
 // HashSet은 특정 상황에서만 사용되며, List 계열보다는 사용 빈도가 낮은편
-// 중복된 데이터 제거가 필요할 때 유용(예: ArrayList의 요소에서 중복을 제거할 때)0
+// 중복된 데이터 제거가 필요할 때 유용(예: ArrayList의 요소에서 중복을 제거할 때)
 public class HashSetExample {
 
 	public static void main(String[] args) {
