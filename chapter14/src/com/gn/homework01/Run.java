@@ -15,8 +15,16 @@ public class Run {
 		
 		long startTime = System.nanoTime();
 		practice.method1(song);
+		long endTime = System.nanoTime();
+		System.out.println("소요된 시간: " + (endTime - startTime));
 		
+		System.out.println();
+		
+		long startTime1 = System.nanoTime();
 		practice.method2(song);
+		long endTime1 = System.nanoTime();
+		System.out.println("소요된 시간: " + (endTime1 - startTime1));
+		
 		
 	}
 }
